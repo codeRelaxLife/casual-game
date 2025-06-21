@@ -1,6 +1,8 @@
 import Image from "next/image";
 
 export default function Home() {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0f2027] via-[#2c5364] to-[#f0c27b] flex flex-col items-center px-0 relative overflow-x-hidden">
       {/* 彩色渐变背景装饰 */}
@@ -37,7 +39,7 @@ export default function Home() {
 
       {/* 页脚 */}
       <footer className="w-full max-w-3xl text-center text-xs text-gray-200 pb-6 select-none z-10 relative">
-        © {new Date().getFullYear()} H5 游戏导航 | 精选自 OnlineGames.io
+        © {currentYear} H5 游戏导航 | 精选自 OnlineGames.io
       </footer>
     </div>
   );
